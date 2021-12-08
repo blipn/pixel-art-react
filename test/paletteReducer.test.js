@@ -25,7 +25,7 @@ describe('reducer: SET_INITIAL_STATE', () => {
     const nextState = reducer(undefined, actions.setInitialState({}));
     const nextGrid = nextState.get('grid');
 
-    expect(nextGrid.getIn([0, 'color'])).toEqual('rgba(0, 0, 0, 1)');
+    expect(nextGrid.getIn([0, 'color'])).toEqual('rgba(1, 1, 1, 1)');
     expect(nextGrid.getIn([23, 'color'])).toEqual('rgba(255, 255, 255, 1)');
     expect(nextGrid.getIn([24, 'color'])).toEqual('rgba(56, 53, 53, 1)');
     expect(nextGrid.getIn([29, 'color'])).toEqual('rgba(56, 53, 53, 1)');

@@ -85,8 +85,9 @@ function renderFrames(settings) {
   });
 
   gif.setRepeat(0); // loop indefinitely
-  gif.setDispose(3); // restore to previous
+  gif.setDispose(2); // default
   gif.writeHeader();
+  gif.setTransparent(0x00ff00);
 
   switch (type) {
     case 'single':

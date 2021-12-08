@@ -32,7 +32,7 @@ const addColorToLastGridCell = (palette, newColor) => {
 
 const createPaletteGrid = () =>
   List([
-    'rgba(0, 0, 0, 1)',
+    'rgba(1, 1, 1, 1)',
     'rgba(255, 0, 0, 1)',
     'rgba(233, 30, 99, 1)',
     'rgba(156, 39, 176, 1)',
